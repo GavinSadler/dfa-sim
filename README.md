@@ -7,3 +7,19 @@ In terms of program structure, the main driver was separated from the DFA functi
 Sample machines are provided, with a .dfa machine definition file, a .in sample input file, and a .out expected output sample. The program is written in C++ and supports both Windows and Linux. Building the program can be done via this command:
 
 `~/dfa-sim-submission$ mkdir build && cd build && cmake ../ && cmake --build .`
+
+Ideas to improve:
+- Set up CI/CD to automatically build when new changes are pushed/merged into master
+- Set up CI/CD to automatically publish binaries on master
+- Flesh out this README file
+- Provide more input machines
+- Support for NFAs
+- Better support for different machine input types (json...)
+- Decouple DFA and parsing logic
+- DFA object should be able to verify if the machine is valid (all transitions accounted for)
+- Implement a lenient mode allowing a machine to be described with just a certain set of transitions rather than a full description of states/alphabet etc.
+- Better command line interfacing
+- Optimize for larger, more complex machines
+- Convert regex to a machine
+- Interactive mode
+- Proper user interface
