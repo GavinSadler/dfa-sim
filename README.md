@@ -23,3 +23,4 @@ Ideas to improve:
 - Convert regex to a machine
 - Interactive mode
 - Proper user interface
+- Either update getopt.c/h to come in as a separate library or properly attribute them
