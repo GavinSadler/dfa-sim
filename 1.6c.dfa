@@ -1,0 +1,15 @@
+# Homework 2 problem 1.6c DFA definition, input contains substring 0101
+states: a b c d e
+alphabet: 0 1 
+startstate: a
+finalstate: e
+transition: a 0 b 
+transition: a 1 a 
+transition: b 0 b 
+transition: b 1 c 
+transition: c 0 d 
+transition: c 1 a 
+transition: d 0 b 
+transition: d 1 e 
+transition: e 0 e 
+transition: e 1 e 

@@ -1,0 +1,17 @@
+# A DFA machine that recognizes the pattern a*.c (.c, a.c, aa.c, aaa.c, etc...)
+states: fail x y z
+alphabet: a . c
+startstate: x 
+finalstate: z 
+transition: x a x 
+transition: x . y 
+transition: x c fail 
+transition: y a fail 
+transition: y . fail 
+transition: y c z  
+transition: z a fail  
+transition: z . fail
+transition: z c fail
+transition: fail a fail  
+transition: fail . fail
+transition: fail c fail

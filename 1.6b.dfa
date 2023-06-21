@@ -1,0 +1,13 @@
+# Homework 2 problem 1.6b DFA definition, input contains at least three 1s
+states: a b c d
+alphabet: 0 1 
+startstate: a
+finalstate: d
+transition: a 0 a 
+transition: a 1 b 
+transition: b 0 b 
+transition: b 1 c 
+transition: c 0 c 
+transition: c 1 d 
+transition: d 0 d 
+transition: d 1 d 

@@ -1,0 +1,13 @@
+# Homework 2 problem 1.6f DFA definition, input doesn't contain substring 110
+states: a b c d
+alphabet: 0 1 
+startstate: a
+finalstate: a b c
+transition: a 0 a 
+transition: a 1 b 
+transition: b 0 a 
+transition: b 1 c 
+transition: c 0 d 
+transition: c 1 c 
+transition: d 0 d 
+transition: d 1 d 
